@@ -1,0 +1,15 @@
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+s=Service("C:\\Users\\Indrajit Yele\\AppData\\Local\\Programs\\Python\\Python310\\chromedriver.exe")
+driver = webdriver.Chrome(service=s)
+#driver.get("https://www.facebook.com")
+#driver.maximize_window()
+#driver.minimize_window()
+# print("page title:", driver.title)
+#print("page url:", driver.current_url)
+driver.get("https://www.amazon.com/")
+# print("page title:", driver.title)
+# print("page url:", driver.current_url)
+#driver.back()
+#driver.forward()
+driver.quit()
